@@ -1,0 +1,196 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  border-left: 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+#header {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  padding: 0 2vw;
+  box-shadow: 0 0 8px -1px black;
+}
+
+.container_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+menu, li,a {
+text-decoration: none;
+list-style: none;
+color: black;
+}
+
+.menu span{
+color: #593616;
+font-weight: 700;
+}
+
+.logo{
+  width: 10vh;
+  height: 10vh;
+}
+
+.burguer {
+width: 35px;
+display: none;
+cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu li a{
+padding: 2vh 1vw;
+}
+
+.menu li a:hover{
+transition: background-color .5s ease-in-out;
+background-color: brown;
+border-radius: 0.1em;
+}
+
+/* NavBar animation */
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+opacity: 0;
+}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+@media (max-width: 768px) {
+.burguer {
+  display: inline-block;
+  justify-self: end;
+}
+
+#header {
+  flex-direction: column;
+  align-items: center;
+}
+.off {
+  display: none;
+}
+.menu{
+    flex-direction: column;
+    height: 40vh;
+}
+.container_header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+}   
+#grid-container {
+  padding: 3vh 0 0 0;
+  display: grid;
+  color: white;
+  background-color: black;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  justify-content: center;
+  text-align: center;
+  grid-template-areas: "nav info ubicacion" "nav info ubicacion" "derechos derechos derechos";
+}
+.footer__menu ul li a{
+  color: white;
+}
+.map iframe{
+  height: 100%;
+  width: 80%;
+}
+
+.footer__menu { grid-area: nav; }
+
+.footer__info { grid-area: info; }
+
+.footer__ubicacion { grid-area: ubicacion; }
+
+.footer__derechos { grid-area: derechos; }
+
+@media (max-width:768px){
+  #grid-container{
+    background-color: black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 0.5fr;
+    grid-template-areas: "nav" "info" "ubicacion" "derechos";
+  }
+}

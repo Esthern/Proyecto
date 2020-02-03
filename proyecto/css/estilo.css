@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Se adapta al ancho y alto total del elemento*/
+}
+
+body{
+    background: #f2f2f2;
+    font-family: 'Indie Flower', cursive;
+}
+
+header{
+    color: #fff;
+}
+ header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo_menu{
+    background:#24201F ;
+}
+.logo_menu h2{
+   font-size: 28px;
+   font-weight: bold; /*negrita*/
+}
+
+.logo_menu .menu a{
+  padding: 40px 20px;
+  display: inline-block; /*El elemento tendra un comportamiento mezcla de block e inline*/
+}
+.logo_menu .menu a:hover{
+   border-bottom: 2px solid gold;
+   padding-bottom: 30px;
+}
+/****Principal*****/
+.main{
+  margin: 40px;
+}
+.main .image{
+  margin-bottom: 20px;
+}
+.main .image img{
+width: 100%;
+vertical-align: top; /*Se posiciona correctamente en vertical*/
+}
+
+
+#header {
+  display: flex;
+  background-color: rgb(126, 10, 10);
+  width: 100%;
+  align-items: center;
+  padding: 0 2vw;
+  box-shadow: 0 0 8px -1px black;
+}
+
+.container_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+menu, li,a {
+text-decoration: none;
+list-style: none;
+color: black;
+}
+
+.menu span{
+color: #593616;
+font-weight: 700;
+}
+
+.logo{
+  width: 10vh;
+  height: 10vh;
+}
+
+.burguer {
+width: 35px;
+display: none;
+cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu li a{
+padding: 2vh 1vw;
+}
+
+.menu li a:hover{
+transition: background-color .5s ease-in-out;
+background-color: brown;
+border-radius: 0.1em;
+}
+
+/* NavBar animation */
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+opacity: 0;
+}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+@media (max-width: 768px) {
+.burguer {
+  display: inline-block;
+  justify-self: end;
+}
+
+#header {
+  flex-direction: column;
+  align-items: center;
+}
+.off {
+  display: none;
+}
+.menu{
+    flex-direction: column;
+    height: 40vh;
+}
+.container_header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+} 
+.grow { transition: all .2s ease-in-out; color: #24201F;}
+.grow:hover { transform: scale(1.1) ; }
+
+.header_resume{
+  padding: 10vh 0;
+  margin: 20vh 0 10vh 0;
+  background-color: rgba(0,0,0,0.2);
+  box-shadow: 0 0 8px black;
+  text-align: center;
+  line-height: 3em;
+}
+.header_resume .marcas{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.header_resume .marcas img{
+  max-width: 500px;
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1em;
+  gap: 1rem;
+}
+.description{
+  display: flex;
+  flex-direction: column;
+}
+.card_container{
+  height: 70vh;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 2vh 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: rgb(24, 23, 22);
+}
+
+.card img{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+.card h5::first-line{
+  line-height: 2rem;
+  border-bottom: 0.1em solid black;
+}
+.card span{
+  font-weight: bold;
+  color: rgb(31, 31, 31);
+}
+.card span:last-of-type{
+  line-height: 3vh;
+}

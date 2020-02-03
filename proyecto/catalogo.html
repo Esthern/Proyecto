@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./jquery.js"></script> 
+    <script  src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  
+  <script>
+    $(function onclick() {
+    // Instrucciones de JQuery
+    });
+    </script>
+    
+</head>
+<body>
+  
+  <header>
+    <header id="header">
+      <div class="container_header">
+          <div class="container_logo">
+              <img class="logo" src="./src/Sin título.png" alt="icon">
+              <h1>Automotora Umbral</h1>
+          </div>
+          <div class="burguer" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+          </div>
+      </div>
+      <nav>
+          <ul class="menu off">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Catalogo</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Quienes Somos</a></li>
+              <li><a href="#"> <span>Cotizar</span></a></li>
+          </ul>
+
+      </nav>
+  </header>
+     
+  <div class="products">
+
+    <article class="card_container ">
+        <div class="card">
+            <img src="images/audi.jpg" alt="auto1">
+            <h5>Audi</h5>
+            <div class="description">
+                <p><span>Modelo:</span> Audi A6 Sedán</p>
+                <p><span>Año:</span> 2020</p>
+                <p><span>Transmisión:</span> Automática</p>
+                <p><span>Combustible:</span> Diesel</p>
+                <p><span>$32.000.000</span></p>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+                <a href="audi.html" class="btn btn__detalle grow">Detalle</a>
+                <a href="https://www.appsaudi.com.mx/Catalogos/FichasTecnicas2018/Audi%20A6%202018.pdf" target=_blank class="btn btn__detalle grow">Descargar PDF</a>
+            </div>
+        </div>
+    </article>
+    <article class="card_container ">
+        <div class="card">
+            <img src="images/descarga.jfif" alt="auto1">
+            <h5>Chevrolet</h5>
+            <div class="description">
+                <p><span>Modelo:</span> Spark GT </p>
+                <p><span>Año:</span> 2019</p>
+                <p><span>Transmicion:</span> Manual</p>
+                <p><span>Combustible:</span> Gasolina</p>
+                <p><span>$5.690.000</span></p>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+                <a href="chevrolet.html" class="btn btn__detalle grow">Detalle</a>
+                <a href="https://www.chevrolet.cl/content/dam/chevrolet/south-america/chile/espanol/index/cars/2019-spark-gt/mov/02-pdfs/spark-gt-ficha-v1.pdf" target=_blank class="btn btn__detalle grow">Descargar PDF</a>
+            </div>
+        </div>
+    </article>
+    <article class="card_container ">
+        <div class="card">
+            <img src="images/descargas.jfif" alt="auto1">
+            <h5>BMW</h5>
+            <div class="description">
+                <p><span>Modelo:</span> BMW Serie 1</p>
+                <p><span>Año:</span> 2019</p>
+                <p><span>Transmisión:</span> Automática</p>
+                <p><span>Combustible:</span> Gasolina</p>
+                <p><span>$21.990.0000	</span></p>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+                <a href="bmw.html" class="btn btn__detalle grow">Detalle</a>
+                <a href="https://www.bmw.cl/content/dam/bmw/marketLATAM/bmw_cl/Descargas/Serie1/2017/Ficha%20t%C3%A9cnica%20BMW%20120i%20AT%205P%20M%20Sport%20(02-2017).pdf" target=_blank class="btn btn__detalle grow">Descargar PDF</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card_container ">
+      <div class="card">
+          <img src="images/acura.jpg" alt="auto1">
+          <h5>Acura</h5>
+          <div class="description">
+              <p><span>Modelo:</span> Acura</p>
+              <p><span>Año:</span> 2019</p>
+              <p><span>Transmisión:</span> Automática</p>
+              <p><span>Combustible:</span> Gasolina</p>
+              <p><span>$21.990.000	</span></p>
+          </div>
+          <div class="btns">
+              <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+              <a href="acura.html" class="btn btn__detalle grow">Detalle</a>
+              <a href="https://www.honda.mx/assets/pdf/autos/acura/Ficha-Tecnica-ILX2020.pdf" target=_blank class="btn btn__detalle grow">Descargar PDF</a>
+          </div>
+      </div>
+  </article>
+
+  <article class="card_container ">
+    <div class="card">
+        <img src="images/citroen.jpg" alt="auto1">
+        <h5>Citroén</h5>
+        <div class="description">
+            <p><span>Modelo:</span> NEW SUV C5 AIRCROSS</p>
+            <p><span>Año:</span> 2019</p>
+            <p><span>Transmisión:</span> Automática</p>
+            <p><span>Combustible:</span> Gasolina</p>
+            <p><span>$15.790.000</span></p>
+        </div>
+        <div class="btns">
+            <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+            <a href="citroen.html" class="btn btn__detalle grow">Detalle</a>
+            <a href="https://www.citroen.cl/wp-content/uploads/2019/09/2.0-bluehdi-180-ss-eat8.pdf" target=_blank class="btn btn__detalle grow">Descargar PDF</a>
+        </div>
+    </div>
+</article>
+
+<article class="card_container ">
+  <div class="card">
+      <img src="images/fiat.jpg" alt="auto1">
+      <h5>Fiat</h5>
+      <div class="description">
+          <p><span>Modelo:</span>500</p>
+          <p><span>Año:</span> 2019</p>
+          <p><span>Transmisión:</span> Manual</p>
+          <p><span>Combustible:</span> Gasolina</p>
+          <p><span>$10.990.000	</span></p>
+      </div>
+      <div class="btns">
+          <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+          <a href="fiat.html" class="btn btn__detalle grow">Detalle</a>
+          <a href="http://www.fiatmopar.com.ar/Manuales/pdf/60355445-Fiat%20500%20Esp.pdf" target=_blank class="btn btn__detalle grow">Descargar PDF</a>
+      </div>
+  </div>
+</article>
+
+<article class="card_container ">
+  <div class="card">
+      <img src="images/mazda.jpg" alt="auto1">
+      <h5>Mazda</h5>
+      <div class="description">
+          <p><span>Modelo:</span>Mazda 3</p>
+          <p><span>Año:</span> 2019</p>
+          <p><span>Transmisión:</span> Manual</p>
+          <p><span>Combustible:</span> Gasolina</p>
+          <p><span>$7.990.000	</span></p>
+      </div>
+      <div class="btns">
+          <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+          <a href="mazda.html" class="btn btn__detalle grow">Detalle</a>
+          <a href="https://www.mazda.mx/siteassets/descargables-2020/mazda-3-sedan-2020/ficha-tecnica/ficha_tecnica_mazda3_sedan_2020.pdf" target=_blank class="btn btn__detalle grow">Descargar PDF</a>
+      </div>
+  </div>
+</article>
+
+
+
+
+</div>
+
+  
+  
+<footer id="grid-container">
+  <div class="footer__menu">
+      <h3>Menu</h3>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Catalogo</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+          <li><a href="#"> <span>Cotizar</span></a></li>
+      </ul>
+  </div>
+  <div class="footer__info">
+      <h3>Automotora Umbral</h3>
+      <p>Casa matriz</p>
+      <p>Av. Miguel Claro #123, Providencia</p>
+      <p>Contacto@umbral.cl</p>
+      <p>+569 27354916</p>
+  </div>
+  <div class="footer__ubicacion">
+      <h3>Ubicacion</h3>
+      <div class="map">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.264232401648!2d-70.65756878509177!3d-33.44242180448576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a6690850a3%3A0x8579aa62537fc97!2sMoneda%201342%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1580512253985!5m2!1ses!2scl"
+              frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+  </div>
+  <div class="footer__derechos">
+      <p>Automotora Umbral. Todos los derechos reservados</p>
+  </div>
+</footer>
+
+    
+</body>
+</html>
